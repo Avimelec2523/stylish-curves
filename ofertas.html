@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Innovación y Estilo</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Estilo para el Encabezado */
+        header {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        header img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 200px;
+        }
+
+        /* Barra de Navegación */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #f8f8f8;
+            color: #111;
+        }
+
+        /* Sección de Productos */
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 10px;
+            background-color: #fff;
+        }
+
+        .product {
+            background-color: #fff;
+            margin: 15px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            font-size: 22px;
+            color: #111;
+            padding: 15px 0;
+        }
+
+        .product .price {
+            font-size: 18px;
+            color: #e13c3e;
+            padding-bottom: 20px;
+        }
+
+        /* Estilo para el Pie de Página */
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 40px;
+            }
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Encabezado -->
+<header>
+    <h1>Nike</h1>
+    <p>Innovación y Estilo</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_Nike.svg" alt="Nike Logo">
+</header>
+
+<!-- Barra de Navegación -->
+<nav>
+    <a href="mi pagina.html">Inicio</a>
+    <a href="#">Novedades</a>
+    <a href="#">Deportes</a>
+    <a href="#">Mujer</a>
+    <a href="#">Hombre</a>
+    <a href="#">Ofertas</a>
+</nav>
+
+<!-- Sección de Productos -->
+<div class="main-content">
+    <!-- Producto 1 -->
+    <div class="product">
+        <img src="https://via.placeholder.com/280x280" alt="Air Zoom Pegasus">
+        <h3>Air Zoom Pegasus 39</h3>
+        <p>Corredoras para máximo rendimiento.</p>
+        <div class="price">$129.99</div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product">
+        <img src="https://via.placeholder.com/280x280" alt="Air Force 1">
+        <h3>Air Force 1</h3>
+        <p>Clásico y atemporal.</p>
+        <div class="price">$99.99</div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product">
+        <img src="https://via.placeholder.com/280x280" alt="Nike Training Shorts">
+        <h3>Nike Training Shorts</h3>
+        <p>Comodidad y libertad de movimiento.</p>
+        <div class="price">$39.99</div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product">
+        <img src="https://via.placeholder.com/280x280" alt="Nike Sportswear Joggers">
+        <h3>Joggers Nike Sportswear</h3>
+        <p>Estilo y confort diario.</p>
+        <div class="price">$49.99</div>
+    </div>
+</div>
+
+<!-- Pie de Página -->
+<footer>
+    <p>&copy; 2025 Nike. Todos los derechos reservados.</p>
+    <p>
+        <a href="#">Términos y condiciones</a> |
+        <a href="#">Política de privacidad</a>
+    </p>
+</footer>
+
+</body>
+</html>
+
