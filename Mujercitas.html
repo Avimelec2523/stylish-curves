@@ -3,155 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stylish curves</title>
+    <title>Stylish Curves</title>
     <style>
-        /* Estilo básico para el cuerpo */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f8f8;
         }
-
-        /* Encabezado */
         header {
             background-color: #003e5b;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
-
         header h1 {
             margin: 0;
             font-size: 36px;
             font-weight: bold;
         }
-
-        /* Barra de navegación */
         nav {
             background-color: #004e70;
             padding: 10px 0;
             text-align: center;
         }
-
         nav a {
             color: white;
             text-decoration: none;
             font-size: 18px;
             margin: 0 20px;
         }
-
         nav a:hover {
             text-decoration: underline;
         }
-
-        /* Sección de productos */
         .main-content {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             padding: 20px;
         }
-
-        .product {
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            padding: 15px;
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin: 15px;
-            width: 250px;
-            text-align: center;
-            overflow: hidden;
+            width: 50%;
         }
-
         .product img {
             width: 100%;
             height: auto;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-radius: 10px;
         }
-
         .product h2 {
             font-size: 20px;
             margin: 15px 0;
             color: #333;
         }
-
         .product p {
             font-size: 16px;
             color: #777;
         }
-
         .price {
             font-size: 18px;
             color: #e13c3e;
             margin: 10px 0;
         }
-
-        /* Pie de página */
         footer {
             background-color: #003e5b;
             color: white;
             text-align: center;
             padding: 15px;
         }
-
         footer p {
             margin: 0;
         }
     </style>
 </head>
 <body>
-
-<!-- Encabezado -->
 <header>
-    <h1>stylish curves</h1>
+    <h1>Stylish Curves</h1>
 </header>
-
-<!-- Barra de navegación -->
 <nav>
     <a href="index.html">Inicio</a>
 </nav>
-
-<!-- Contenido principal con productos -->
 <div class="main-content">
-    <!-- Producto 1 -->
-    <div class="product">
-        <img src="https://via.placeholder.com/250" alt="Producto 1">
-        <h2>Jean Azul Claro</h2>
-        <p>Comodidad y estilo</p>
-        <div class="price">$39.99</div>
-    </div>
-
-    <!-- Producto 2 -->
-    <div class="product">
-        <img src="https://via.placeholder.com/250" alt="Producto 2">
-        <h2>Camiseta Básica</h2>
-        <p>Perfecta para el día a día</p>
-        <div class="price">$19.99</div>
-    </div>
-
-    <!-- Producto 3 -->
-    <div class="product">
-        <img src="https://via.placeholder.com/250" alt="Producto 3">
-        <h2>Chaqueta de Invierno</h2>
-        <p>Ideal para el frío</p>
-        <div class="price">$59.99</div>
-    </div>
-
-    <!-- Producto 4 -->
-    <div class="product">
-        <img src="https://via.placeholder.com/250" alt="Producto 4">
-        <h2>Pantalón Cargo</h2>
-        <p>Práctico y cómodo</p>
-        <div class="price">$49.99</div>
-    </div>
+    <table>
+        <tr>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Leggings deportivos">
+                <h2>Leggings Deportivos</h2>
+                <p>Ajuste perfecto y alta elasticidad</p>
+                <div class="price">$29.99</div>
+            </td>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Top de entrenamiento">
+                <h2>Top de Entrenamiento</h2>
+                <p>Transpirable y cómodo</p>
+                <div class="price">$19.99</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Shorts deportivos">
+                <h2>Shorts Deportivos</h2>
+                <p>Libertad de movimiento</p>
+                <div class="price">$24.99</div>
+            </td>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Sudadera ligera">
+                <h2>Sudadera Ligera</h2>
+                <p>Perfecta para el calentamiento</p>
+                <div class="price">$34.99</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Sujetador deportivo">
+                <h2>Sujetador Deportivo</h2>
+                <p>Sujeción y comodidad</p>
+                <div class="price">$22.99</div>
+            </td>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Conjunto deportivo">
+                <h2>Conjunto Deportivo</h2>
+                <p>Estilo y funcionalidad</p>
+                <div class="price">$49.99</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Chaqueta deportiva">
+                <h2>Chaqueta Deportiva</h2>
+                <p>Para entrenar en exteriores</p>
+                <div class="price">$39.99</div>
+            </td>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Mallas compresivas">
+                <h2>Mallas Compresivas</h2>
+                <p>Recuperación y rendimiento</p>
+                <div class="price">$32.99</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Camiseta sin mangas">
+                <h2>Camiseta sin Mangas</h2>
+                <p>Ideal para entrenamientos intensos</p>
+                <div class="price">$18.99</div>
+            </td>
+            <td class="product">
+                <img src="https://via.placeholder.com/250" alt="Calcetines deportivos">
+                <h2>Calcetines Deportivos</h2>
+                <p>Comodidad y soporte</p>
+                <div class="price">$9.99</div>
+            </td>
+        </tr>
+    </table>
 </div>
-
-
-
-
+<footer>
+    <p>&copy; 2025 Stylish Curves. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
+
 
 
 
