@@ -6,8 +6,19 @@
     <title>Galería de Imágenes</title>
 </head>
 <body>
+  
+      <li><a href="index.html">inicio</a></li>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón en HTML</title>
+</head>
+<body>
 
-<style>
+    <button>Haz clic aquí</button>
+
+
+
+  <style>
         /* Estilo global */
         body, html {
             margin: 0;
@@ -15,6 +26,9 @@
             height: 100%;
             font-family: 'Arial', sans-serif;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Fondo animado con rojo y negro */
@@ -25,6 +39,7 @@
             background: linear-gradient(45deg, #ff0000, #000000, #ff0000, #000000);
             background-size: 400% 400%;
             animation: gradientAnimation 10s ease infinite;
+            z-index: -1; /* Asegura que el fondo esté detrás de las imágenes */
         }
 
         @keyframes gradientAnimation {
@@ -32,23 +47,41 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+
+        /* Estilo para las imágenes */
+        .image-container {
+            position: relative;
+            z-index: 1; /* Asegura que las imágenes estén por encima del fondo */
+        }
+
+        .image-container img {
+            width: 150px; /* Ajusta el tamaño de las imágenes */
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto al pasar el mouse sobre las imágenes */
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
     </style>
-
-    <li><a href="index.html">inicio</a></li>
-    <div>
-        <img src="D:\fer 6sm\Captura de pantalla 2025-03-21 190455.png" alt="Imagen 1" width="300">
-        <img src="imagen2.jpg" alt="Imagen 2" width="300">
-        <img src="imagen3.jpg" alt="Imagen 3" width="300">
-    </div>
-
 </head>
 <body>
 
     <div class="background"></div>
 
-    
+    <div class="image-container">
+        <img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=Imagen+1" alt="Imagen 1">
+        <img src="https://via.placeholder.com/150/000000/FFFFFF?text=Imagen+2" alt="Imagen 2">
+        <img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=Imagen+3" alt="Imagen 3">
+    </div>
+      
 
-    
-    
+
+    <p>en esta fotos prodra observar que no tenemos muchas fotos juntos</p>
+    </div>
 </body>
 </html>
