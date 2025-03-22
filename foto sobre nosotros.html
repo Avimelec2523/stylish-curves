@@ -16,7 +16,7 @@
 
 
 
- <style>
+<style>
         /* Estilo global */
         body, html {
             margin: 0;
@@ -26,12 +26,12 @@
             overflow: hidden;
         }
 
-        /* Fondo animado */
+        /* Fondo animado con rojo y negro */
         .background {
             position: absolute;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, #ff00cc, #00ffff, #ff9900, #0099ff);
+            background: linear-gradient(45deg, #ff0000, #000000, #ff0000, #000000);
             background-size: 400% 400%;
             animation: gradientAnimation 10s ease infinite;
         }
@@ -41,35 +41,11 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-
-        /* Estilo para el botón */
-        .button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            border: none;
-            padding: 20px 40px;
-            font-size: 18px;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-            transition: all 0.3s ease-in-out;
-        }
-
-        /* Efecto al pasar el mouse sobre el botón */
-        .button:hover {
-            transform: translate(-50%, -50%) scale(1.1);
-            box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
-        }
     </style>
 </head>
 <body>
 
     <div class="background"></div>
-    <button class="button" onclick="alert('¡Botón presionado!')">Haz clic aquí</button>
 
     
 
