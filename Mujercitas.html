@@ -16,11 +16,20 @@
             color: white;
             text-align: center;
             padding: 20px 0;
+            position: relative;
         }
         header h1 {
             margin: 0;
             font-size: 36px;
             font-weight: bold;
+        }
+        .cart-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
         }
         nav {
             background-color: #004e70;
@@ -38,20 +47,18 @@
         }
         .main-content {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            gap: 20px;
             padding: 20px;
         }
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            text-align: center;
-        }
-        td {
-            padding: 15px;
+        .product {
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 50%;
+            padding: 15px;
+            text-align: center;
+            width: 250px;
         }
         .product img {
             width: 100%;
@@ -82,93 +89,86 @@
             margin: 0;
         }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
     <h1>Stylish Curves</h1>
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
 </header>
 <nav>
     <a href="index.html">Inicio</a>
 </nav>
 <div class="main-content">
-    <table>
-        <tr>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Leggings deportivos">
-                <h2>Leggings Deportivos</h2>
-                <p>Ajuste perfecto y alta elasticidad</p>
-                <div class="price">$29.99</div>
-            </td>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Top de entrenamiento">
-                <h2>Top de Entrenamiento</h2>
-                <p>Transpirable y cómodo</p>
-                <div class="price">$19.99</div>
-            </td>
-        </tr>
-        <tr>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Shorts deportivos">
-                <h2>Shorts Deportivos</h2>
-                <p>Libertad de movimiento</p>
-                <div class="price">$24.99</div>
-            </td>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Sudadera ligera">
-                <h2>Sudadera Ligera</h2>
-                <p>Perfecta para el calentamiento</p>
-                <div class="price">$34.99</div>
-            </td>
-        </tr>
-        <tr>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Sujetador deportivo">
-                <h2>Sujetador Deportivo</h2>
-                <p>Sujeción y comodidad</p>
-                <div class="price">$22.99</div>
-            </td>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Conjunto deportivo">
-                <h2>Conjunto Deportivo</h2>
-                <p>Estilo y funcionalidad</p>
-                <div class="price">$49.99</div>
-            </td>
-        </tr>
-        <tr>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Chaqueta deportiva">
-                <h2>Chaqueta Deportiva</h2>
-                <p>Para entrenar en exteriores</p>
-                <div class="price">$39.99</div>
-            </td>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Mallas compresivas">
-                <h2>Mallas Compresivas</h2>
-                <p>Recuperación y rendimiento</p>
-                <div class="price">$32.99</div>
-            </td>
-        </tr>
-        <tr>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Camiseta sin mangas">
-                <h2>Camiseta sin Mangas</h2>
-                <p>Ideal para entrenamientos intensos</p>
-                <div class="price">$18.99</div>
-            </td>
-            <td class="product">
-                <img src="https://via.placeholder.com/250" alt="Calcetines deportivos">
-                <h2>Calcetines Deportivos</h2>
-                <p>Comodidad y soporte</p>
-                <div class="price">$9.99</div>
-            </td>
-        </tr>
-    </table>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Leggings deportivos">
+        <h2>Leggings Deportivos</h2>
+        <p>Ajuste perfecto y alta elasticidad</p>
+        <div class="price">$29.99</div>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Top de entrenamiento">
+        <h2>Top de Entrenamiento</h2>
+        <p>Transpirable y cómodo</p>
+        <div class="price">$19.99</div>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Shorts deportivos">
+        <h2>Shorts Deportivos</h2>
+        <p>Libertad de movimiento</p>
+        <div class="price">$24.99</div>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Sudadera ligera">
+        <h2>Sudadera Ligera</h2>
+        <p>Perfecta para el calentamiento</p>
+        <div class="price">$34.99</div>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Sujetador deportivo">
+        <h2>Sujetador Deportivo</h2>
+        <p>Sujeción y comodidad</p>
+        <div class="price">$22.99</div>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Conjunto deportivo">
+        <h2>Conjunto Deportivo</h2>
+        <p>Estilo y funcionalidad</p>
+        <div class="price">$49.99</div>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Chaqueta deportiva">
+        <h2>Chaqueta Deportiva</h2>
+        <p>Para entrenar en exteriores</p>
+        <div class="price">$39.99</div>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Mallas compresivas">
+        <h2>Mallas Compresivas</h2>
+        <p>Recuperación y rendimiento</p>
+        <div class="price">$32.99</div>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Camiseta sin mangas">
+        <h2>Camiseta sin Mangas</h2>
+        <p>Ideal para entrenamientos intensos</p>
+        <div class="price">$18.99</div>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" alt="Calcetines deportivos">
+        <h2>Calcetines Deportivos</h2>
+        <p>Comodidad y soporte</p>
+        <div class="price">$9.99</div>
+    </div>
 </div>
 <footer>
     <p>&copy; 2025 Stylish Curves. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>
+
 
 
 
